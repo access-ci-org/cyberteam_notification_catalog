@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#all-notifications-summary" class="md-skip">
+        <a href="#notification-catalog-all-portals" class="md-skip">
           Skip to content
         </a>
       
@@ -365,24 +365,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Summary
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -399,47 +381,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#totals-by-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Totals by Source
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#totals-by-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Totals by Portal
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -641,36 +582,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#totals-by-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Totals by Source
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#totals-by-portal" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Totals by Portal
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -690,414 +601,651 @@
 
 
 <!-- auto-generated, do not hand-edit -->
-<h1 id="all-notifications-summary">All Notifications — Summary</h1>
-<p>This index lists every automated notification catalogued across all portals.</p>
+
+<h1 id="notification-catalog-all-portals">Notification Catalog — All Portals</h1>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Portal(s)</th>
 <th>Trigger</th>
-<th>Method</th>
+<th>Send Method</th>
 <th>Subject</th>
-<th style="text-align: center;">Needs Review</th>
+<th>Needs Review</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Needs Adjustment</td>
-<td>access-support</td>
-<td>content moderation (request_adjustment / editorial)</td>
+<td>Appverse Review Requested</td>
+<td>open-ondemand</td>
+<td>content moderation transition: send_for_review</td>
 <td>email</td>
-<td>Your [...] needs adjustment</td>
-<td style="text-align: center;">—</td>
+<td>New Appverse App submitted</td>
+<td>no</td>
 </tr>
 <tr>
-<td>Published</td>
+<td>Engagement Accepted</td>
 <td>access-support</td>
-<td>content moderation (publish / editorial)</td>
+<td>content moderation transition: start_recruiting_and_notify_author_</td>
 <td>email</td>
-<td>Your [...] was published</td>
-<td style="text-align: center;">—</td>
+<td>Your MATCH Engagement is ready to recruit!</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Engagement Draft</td>
+<td>access-support</td>
+<td>content moderation transition: create_new_draft</td>
+<td>email</td>
+<td>MATCH Engagement draft created</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Engagement Received</td>
+<td>access-support</td>
+<td>content moderation transition: save_as_submitted</td>
+<td>email</td>
+<td>Your MATCH Engagement was received</td>
+<td>no</td>
 </tr>
 <tr>
 <td>Review Requested</td>
 <td>access-support</td>
-<td>content moderation (send_for_review / editorial)</td>
-<td>email</td>
-<td>[...] needs review</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Event Registration Confirmation</td>
-<td>access-support</td>
-<td>user registers for event</td>
-<td>email</td>
-<td><code>{{ email_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Registration Approved</td>
-<td>access-support</td>
-<td>event registration approved</td>
-<td>email</td>
-<td><code>{{ email_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Waitlist Notification</td>
-<td>access-support</td>
-<td>registration waitlisted</td>
-<td>email</td>
-<td>Waitlist Status for <code>{{ title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Registrant Digest</td>
-<td>access-support</td>
-<td>new event registrations (digest)</td>
-<td>email</td>
-<td><code>{{ registration_count }}</code> new registration(s) for <code>{{ event_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Post-Event Survey</td>
-<td>access-support</td>
-<td>post-event trigger</td>
-<td>email</td>
-<td>Please participate in our survey for <code>{{ title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Post-Event Survey Reminder</td>
-<td>access-support</td>
-<td>reminder cron/follow-up</td>
-<td>email</td>
-<td>Reminder: please participate in our survey for <code>{{ title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Announcement Review</td>
-<td>access-support</td>
-<td>announcement content created</td>
-<td>email</td>
-<td>An announcement is ready for review</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Ticketing Form Email</td>
-<td>access-support</td>
-<td>webform submission (ticketing form)</td>
-<td>email</td>
-<td>Derived from form data</td>
-<td style="text-align: center;">⚠️</td>
-</tr>
-<tr>
-<td>Account Support Request</td>
-<td>access-support</td>
-<td>webform submission (account support)</td>
-<td>email</td>
-<td>account support request from [name]</td>
-<td style="text-align: center;">⚠️</td>
-</tr>
-<tr>
-<td>Request to Add Org</td>
-<td>access-support</td>
-<td>webform submission (org list add)</td>
-<td>email</td>
-<td>Request to add an organization from [name]</td>
-<td style="text-align: center;">⚠️</td>
-</tr>
-<tr>
-<td>New CCMNet User (Admin)</td>
-<td>ccmnet</td>
-<td>new user registration</td>
-<td>email</td>
-<td>A new CCMNet participant has joined!</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>CCMNet Welcome</td>
-<td>ccmnet</td>
-<td>new user registration</td>
-<td>email</td>
-<td>Welcome to CCMNet...</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentorship Interest (Author)</td>
-<td>ccmnet</td>
-<td>daily cron</td>
-<td>email</td>
-<td>Interest in your Mentorship</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentorship Interest Digest (Role)</td>
-<td>ccmnet</td>
-<td>daily cron</td>
-<td>email</td>
-<td>Daily mentorship interest summary</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Liaison/Mentor/Mentee Match</td>
-<td>ccmnet</td>
-<td>mentor match made</td>
-<td>email</td>
-<td>A new mentorship match</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentee Selected</td>
-<td>ccmnet</td>
-<td>mentor/mentee pairing saved</td>
-<td>email</td>
-<td>You have been selected as a mentee</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentor Selected</td>
-<td>ccmnet</td>
-<td>mentor/mentee pairing saved</td>
-<td>email</td>
-<td>You have been selected as a mentor</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentorship Approved (PM)</td>
-<td>ccmnet</td>
-<td>mentorship approved</td>
-<td>email</td>
-<td>Mentorship Engagement approved</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>New Mentorship (Admin)</td>
-<td>ccmnet</td>
-<td>mentorship created</td>
-<td>email</td>
-<td>New Mentorship Created</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentorship Created (Requestor)</td>
-<td>ccmnet</td>
-<td>mentorship created</td>
-<td>email</td>
-<td>Mentorship Engagement received</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Mentorship In Progress</td>
-<td>ccmnet</td>
-<td>mentorship status → in-progress</td>
-<td>email</td>
-<td>Mentorship in progress</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Allocation Import Error</td>
-<td>campus-champions</td>
-<td>allocations cron import error</td>
-<td>email</td>
-<td>Errors during allocations import</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Constant Contact Error</td>
-<td>campus-champions</td>
-<td>Constant Contact API error</td>
-<td>email</td>
-<td>Constant Contact problem/error</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Simplelists Error</td>
-<td>campus-champions</td>
-<td>Simplelists integration error</td>
-<td>email</td>
-<td>Simplelists problem</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Appverse Review Requested</td>
-<td>campus-champions</td>
-<td>content moderation (send_for_review / appverse_editorial)</td>
-<td>email</td>
-<td>New Appverse App submitted</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>ACCESS Weekly Digest</td>
-<td>campus-champions</td>
-<td>weekly cron</td>
-<td>constant-contact</td>
-<td>The ACCESS Digest // [date]</td>
-<td style="text-align: center;">⚠️</td>
-</tr>
-<tr>
-<td>New Project Submission (Manager)</td>
-<td>pascience</td>
-<td>project node created</td>
-<td>email</td>
-<td>New Project Submission: <code>{{ project_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Project Submission Received (Author)</td>
-<td>pascience</td>
-<td>project node created</td>
-<td>email</td>
-<td>Project Submission Received: <code>{{ project_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Project Updated (Manager)</td>
-<td>pascience</td>
-<td>project node updated</td>
-<td>email</td>
-<td>Project Updated: <code>{{ project_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Project Approved (Author)</td>
-<td>pascience</td>
-<td>project approved/published</td>
-<td>email</td>
-<td>Project Approved and Published: <code>{{ project_title }}</code></td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>Project Interest Flagged</td>
-<td>pascience</td>
-<td>user flags interest in project</td>
-<td>email</td>
-<td><code>{{ title }}</code> - interest shown on project</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>MATCH Engagement Draft</td>
-<td>shared</td>
-<td>content moderation (create_new_draft / match_engagement)</td>
-<td>email</td>
-<td>MATCH Engagement draft created</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>MATCH Engagement Received</td>
-<td>shared</td>
-<td>content moderation (save_as_submitted / match_engagement)</td>
-<td>email</td>
-<td>Your MATCH Engagement was received</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>MATCH Engagement Accepted <em>(disabled)</em></td>
-<td>shared</td>
-<td>content moderation (start_recruiting / match_engagement)</td>
-<td>email</td>
-<td>Your MATCH Engagement is ready to recruit!</td>
-<td style="text-align: center;">—</td>
-</tr>
-<tr>
-<td>MATCH Engagement Review Requested <em>(disabled)</em></td>
-<td>shared</td>
-<td>content moderation (request_review / match_engagement)</td>
+<td>content moderation transition: request_review</td>
 <td>email</td>
 <td>MATCH Engagement submitted for review</td>
-<td style="text-align: center;">—</td>
+<td>no</td>
 </tr>
 <tr>
-<td>MATCH Engagement Final Review <em>(disabled)</em></td>
-<td>shared</td>
-<td>content moderation (finished_adding_information / match_engagement)</td>
+<td>Final Review</td>
+<td>access-support</td>
+<td>content moderation transition: finished_adding_information</td>
 <td>email</td>
 <td>MATCH Engagement ready for review</td>
-<td style="text-align: center;">—</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="totals-by-source">Totals by Source</h2>
-<table>
-<thead>
-<tr>
-<th>Source</th>
-<th>Count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content Moderation Notifications</td>
-<td>9</td>
+<td>no</td>
 </tr>
 <tr>
-<td>Symfony Mailer Policies</td>
-<td>26</td>
-</tr>
-<tr>
-<td>EmailBuilder PHP Plugins</td>
-<td>0 new (all covered by Symfony Mailer)</td>
-</tr>
-<tr>
-<td>Hook-based Emails (<code>drupal_mail</code> / <code>mailManager-&gt;mail</code>)</td>
-<td>0 new (all covered by WebformHandler PHP)</td>
-</tr>
-<tr>
-<td>Constant Contact Campaigns</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Webform YAML Email Handlers</td>
-<td>0</td>
-</tr>
-<tr>
-<td>WebformHandler PHP Plugins</td>
-<td>3</td>
-</tr>
-<tr>
-<td><strong>Total</strong></td>
-<td><strong>39</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="totals-by-portal">Totals by Portal</h2>
-<table>
-<thead>
-<tr>
-<th>Portal</th>
-<th>Count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
+<td>Needs Adjustment</td>
 <td>access-support</td>
-<td>13</td>
+<td>content moderation transition: request_adjustment</td>
+<td>email</td>
+<td>Your {% if entity.bundle|title == 'Access_News' %}ACCESS News{% else %}ACCESS Event{% endif %} needs adjustment</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Published</td>
+<td>access-support</td>
+<td>content moderation transition: publish</td>
+<td>email</td>
+<td>Your {% if entity.bundle|title == 'Access_News' %}Announcement{% else %}Event{% endif %} was published</td>
+<td>no</td>
+</tr>
+<tr>
+<td>post_survey</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Please participate in our survey for {{ title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>post_survey_reminder</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Reminder: please participate in our survey for {{ title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>register</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>{{ email_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>registrant_digest</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>{% if registration_count == 1 %}{{ registration_count }} new registration{% else %}{{ registration_count }} new registrations{% endif %} for {{ event_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>registration_approved</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>{{ email_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>waitlist</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Waitlist Status for {{ title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>project_approved_pascience</td>
+<td>pascience</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Project Approved and Published: {{ project_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>project_created_pascience</td>
+<td>pascience</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>New Project Submission: {{ project_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>project_flagged</td>
+<td>pascience</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>{{ title }} - interest shown on project</td>
+<td>no</td>
+</tr>
+<tr>
+<td>project_received_pascience</td>
+<td>pascience</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Project Submission Received: {{ project_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>project_updated_pascience</td>
+<td>pascience</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Project Updated: {{ project_title }}</td>
+<td>no</td>
+</tr>
+<tr>
+<td>announcement_review</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>An announcement is ready for review</td>
+<td>no</td>
+</tr>
+<tr>
+<td>allocation_error</td>
+<td>campus-champions</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Errors during allocations import</td>
+<td>no</td>
+</tr>
+<tr>
+<td>cc_error</td>
+<td>campus-champions</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Constant Contact problem/error</td>
+<td>no</td>
+</tr>
+<tr>
+<td>simplelist_error</td>
+<td>campus-champions</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Simplelists problem</td>
+<td>no</td>
+</tr>
+<tr>
+<td>ccmnet_new_user</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>A new CCMNet participant has joined!</td>
+<td>no</td>
+</tr>
+<tr>
+<td>ccmnet_welcome</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Welcome to CCMNet (Cyberinfrastructure Community-Wide Mentorship Network)</td>
+<td>no</td>
+</tr>
+<tr>
+<td>cron_author_update</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Interest in your Mentorship</td>
+<td>no</td>
+</tr>
+<tr>
+<td>cron_role_update</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Daily mentorship interest summary</td>
+<td>no</td>
+</tr>
+<tr>
+<td>liaison_mentor_mentee_changed</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>A new mentorship match</td>
+<td>no</td>
+</tr>
+<tr>
+<td>mentee_changed</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>You have been selected as a mentee</td>
+<td>no</td>
+</tr>
+<tr>
+<td>mentor_changed</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>You have been selected as a mentor</td>
+<td>no</td>
+</tr>
+<tr>
+<td>mentorship_approved_ccmnet_pm</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Mentorship Engagement approved</td>
+<td>no</td>
+</tr>
+<tr>
+<td>mentorship_created</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Mentorship Engagement received</td>
+<td>no</td>
+</tr>
+<tr>
+<td>mentorship_created_admin</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>New Mentorship Created</td>
+<td>no</td>
+</tr>
+<tr>
+<td>mentorship_in_progress</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Mentorship in progress</td>
+<td>no</td>
+</tr>
+<tr>
+<td>test</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td>Test email from [site:name]</td>
+<td>no</td>
+</tr>
+<tr>
+<td>affinitygroup</td>
+<td>campus-champions</td>
+<td>user action / system event</td>
+<td>email</td>
+<td></td>
+<td>no</td>
+</tr>
+<tr>
+<td>access_misc_project</td>
+<td>pascience</td>
+<td>user action / system event</td>
+<td>email</td>
+<td></td>
+<td>no</td>
+</tr>
+<tr>
+<td>access_misc</td>
+<td>access-support</td>
+<td>user action / system event</td>
+<td>email</td>
+<td></td>
+<td>no</td>
 </tr>
 <tr>
 <td>ccmnet</td>
-<td>11</td>
+<td>ccmnet</td>
+<td>user action / system event</td>
+<td>email</td>
+<td></td>
+<td>no</td>
 </tr>
 <tr>
+<td>Constant Contact usage in AffinityGroupCommands.php</td>
 <td>campus-champions</td>
-<td>5</td>
+<td>programmatic CC call</td>
+<td>constant-contact</td>
+<td></td>
+<td>⚠ yes</td>
 </tr>
 <tr>
-<td>pascience</td>
-<td>5</td>
+<td>Constant Contact usage in ConstantContact.php</td>
+<td>campus-champions</td>
+<td>programmatic CC call</td>
+<td>constant-contact</td>
+<td></td>
+<td>⚠ yes</td>
 </tr>
 <tr>
-<td>shared</td>
-<td>5</td>
+<td>Constant Contact usage in AllocationsUsersImport.php</td>
+<td>campus-champions</td>
+<td>programmatic CC call</td>
+<td>constant-contact</td>
+<td></td>
+<td>⚠ yes</td>
 </tr>
 <tr>
-<td>open-ondemand</td>
-<td>0</td>
+<td>Constant Contact usage in EmailWrapper.php</td>
+<td>campus-champions</td>
+<td>programmatic CC call</td>
+<td>constant-contact</td>
+<td></td>
+<td>⚠ yes</td>
 </tr>
 <tr>
-<td><strong>Total</strong></td>
-<td><strong>39</strong></td>
+<td>Constant Contact usage in AccessMiscCommands.php</td>
+<td>access-support</td>
+<td>programmatic CC call</td>
+<td>constant-contact</td>
+<td></td>
+<td>⚠ yes</td>
+</tr>
+<tr>
+<td>Email (affinity_group_request)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Affinity Group Request</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Confirmation (amp_newsletter)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Subscribed to ACCESS MATCH updates</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (amp_newsletter)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email confirmation (ccmnet_mentors_contact)</td>
+<td>ccmnet</td>
+<td>webform submission</td>
+<td>email</td>
+<td>[webform_submission:values:subject:raw]</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email notification (ccmnet_mentors_contact)</td>
+<td>ccmnet</td>
+<td>webform submission</td>
+<td>email</td>
+<td>CCMNet Mentors Contact</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email confirmation (contact)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>[webform_submission:values:subject:raw]</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email notification (contact)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>[webform_submission:values:subject:raw]</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (distributed_experts_network_help)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>edit cssn roles email (edit_your_cssn_roles)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Edit the CSSN Roles</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Confirmation (get_updates_about_ccmnet)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Subscribed to CCMNet updates</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (get_updates_about_ccmnet)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Subscribed to CCMNet updates</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email to Help Desk (issue)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email CC Admin (join_campus_champions)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Campus Champion Application</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (join_ccmnet)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Join the CCMNet Submission</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email to Submitter (join_ccmnet)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Thank you for joining the CCMNet!</td>
+<td>no</td>
+</tr>
+<tr>
+<td>join the network email (join_the_cssn_network)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Join the CSSN Submission</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Welcome to CSSN (join_the_cssn_network)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (organization)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (request_tag)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (resource)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>Please review this KB Resource</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Ticketing Send Email (rt_ticketing_system)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td></td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email confirmation (template_contact)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>[webform_submission:values:subject:raw]</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email notification (template_contact)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>[webform_submission:values:subject:raw]</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email confirmation (template_feedback)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email notification (template_feedback)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Notification (template_job_application)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Notification (template_job_seeker_profile)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Notification (template_registration)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Notification (template_session_evaluation)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Notification (template_subscribe)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email Notification (template_user_profile)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Email (type_of_proposal_support)</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td>_default</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Account Support Add Header</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td></td>
+<td>no</td>
+</tr>
+<tr>
+<td>ACCESS Orgs List Add Header</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td></td>
+<td>no</td>
+</tr>
+<tr>
+<td>Send the Ticketing email</td>
+<td>access-support</td>
+<td>webform submission</td>
+<td>email</td>
+<td></td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
